@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ZapatoStyle - Tu Tienda de Calzado Online</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">ZapatoStyle</div>
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Niños</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li class="cart-icon">
+                        <a href="#">🛒</a>
+                        <span class="cart-count">3</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Estilo y Confort para tus Pasos</h1>
+            <p>Descubre nuestra nueva colección de temporada con diseños exclusivos y materiales de primera calidad</p>
+            <a href="#" class="btn">Comprar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="/api/placeholder/300/200" alt="Zapatos Casuales">
+                    </div>
+                    <div class="category-name">Zapatos Casuales</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="/api/placeholder/300/200" alt="Zapatos Deportivos">
+                    </div>
+                    <div class="category-name">Deportivos</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="/api/placeholder/300/200" alt="Zapatos Formales">
+                    </div>
+                    <div class="category-name">Formales</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="/api/placeholder/300/200" alt="Botas">
+                    </div>
+                    <div class="category-name">Botas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            
+            <div class="filters">
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">Hombre</button>
+                <button class="filter-btn">Mujer</button>
+                <button class="filter-btn">Niños</button>
+                <button class="filter-btn">Ofertas</button>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Nuevo</div>
+                    <div class="product-actions">
+                        <div class="action-btn">❤</div>
+                        <div class="action-btn">🔍</div>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/300/300" alt="Zapatilla Runner Pro">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Deportivos</div>
+                        <div class="product-name">Zapatilla Runner Pro</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-description">
+                            Zapatillas deportivas ultraligeras para correr, con amortiguación superior.
+                        </div>
+                        <div class="product-price-container">
+                            <div class="product-price">$89.99</div>
+                            <div class="product-old-price">$110.00</div>
+                        </div>
+                        <button class="product-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-badge">-15%</div>
+                    <div class="product-actions">
+                        <div class="action-btn">❤</div>
+                        <div class="action-btn">🔍</div>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/300/300" alt="Mocasín Urbano Classic">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Casual</div>
+                        <div class="product-name">Mocasín Urbano Classic</div>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-description">
+                            Mocasines elegantes y cómodos para uso diario, cuero genuino.
+                        </div>
+                        <div class="product-price-container">
+                            <div class="product-price">$75.50</div>
+                            <div class="product-old-price">$89.00</div>
+                        </div>
+                        <button class="product-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-actions">
+                        <div class="action-btn">❤</div>
+                        <div class="action-btn">🔍</div>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/300/300" alt="Oxford Elegance">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Formal</div>
+                        <div class="product-name">Oxford Elegance</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-description">
+                            Zapatos formales con diseño clásico, perfectos para eventos especiales.
+                        </div>
+                        <div class="product-price-container">
+                            <div class="product-price">$120.00</div>
+                        </div>
+                        <button class="product-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-badge">Popular</div>
+                    <div class="product-actions">
+                        <div class="action-btn">❤</div>
+                        <div class="action-btn">🔍</div>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/300/300" alt="Bota Adventure Trek">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Botas</div>
+                        <div class="product-name">Bota Adventure Trek</div>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-description">
+                            Botas resistentes al agua, ideal para aventuras al aire libre.
+                        </div>
+                        <div class="product-price-container">
+                            <div class="product-price">$149.99</div>
+                            <div class="product-old-price">$179.99</div>
+                        </div>
+                        <button class="product-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 5 -->
+                <div class="product-card">
+                    <div class="product-actions">
+                        <div class="action-btn">❤</div>
+                        <div class="action-btn">🔍</div>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/300/300" alt="Sandalias Verano Comfort">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Sandalias</div>
+                        <div class="product-name">Sandalias Verano Comfort</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-description">
+                            Sandalias con soporte para arco, perfectas para el día a día en verano.
+                        </div>
+                        <div class="product-price-container">
+                            <div class="product-price">$45.99</div>
+                        </div>
+                        <button class="product-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 6 -->
+                <div class="product-card">
+                    <div class="product-badge">Destacado</div>
+                    <div class="product-actions">
+                        <div class="action-btn">❤</div>
+                        <div class="action-btn">🔍</div>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/300/300" alt="Zapato Vestir Premium">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Formal</div>
+                        <div class="product-name">Zapato Vestir Premium</div>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-description">
+                            Zapatos de vestir de alta gama con acabados artesanales de primer nivel.
+                        </div>
+                        <div class="product-price-container">
+                            <div class="product-price">$199.99</div>
+                            <div class="product-old-price">$230.00</div>
+                        </div>
+                        <button class="product-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 7 -->
+                <div class="product-card">
+                    <div class="product-actions">
+                        <div class="action-btn">❤</div>
+                        <div class="action-btn">🔍</div>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/300/300" alt="Tenis Casual Street">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Casual</div>
+                        <div class="product-name">Tenis Casual Street</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-description">
+                            Tenis urbanos con estilo moderno, cómodos para uso diario.
+                        </div>
+                        <div class="product-price-container">
+                            <div class="product-price">$65.00</div>
+                        </div>
+                        <button class="product-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 8 -->
+                <div class="product-card">
+                    <div class="product-badge">Último</div>
+                    <div class="product-actions">
+                        <div class="action-btn">❤</div>
+                        <div class="action-btn">🔍</div>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/300/300" alt="Botines Otoño Fashion">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Botas</div>
+                        <div class="product-name">Botines Otoño Fashion</div>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-description">
+                            Botines de moda para temporada de otoño con detalles únicos.
+                        </div>
+                        <div class="product-price-container">
+                            <div class="product-price">$85.50</div>
+                            <div class="product-old-price">$99.00</div>
+                        </div>
+                        <button class="product-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="section-title">Suscríbete a Nuestro Newsletter</h2>
+                <p>Recibe las últimas novedades y ofertas exclusivas directamente en tu correo</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Tu correo electrónico">
+                    <button type="submit" class="newsletter-btn">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ZapatoStyle</h3>
+                    <p>Tu tienda de calzado favorita con las mejores marcas y los diseños más modernos para toda la familia.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Atención al Cliente</h3>
+                    <ul>
+                        <li><a href="#">Política de Envíos</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>📍 Calle Principal 123, Ciudad</li>
+                        <li>📞 +123 456 789</li>
+                        <li>✉ info@zapatostyle.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 ZapatoStyle. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
