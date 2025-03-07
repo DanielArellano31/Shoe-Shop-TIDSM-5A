@@ -18,7 +18,7 @@ mongoose.connect(process.env.urlbase)
 const app = express();
 app.use(cors());
 app.listen(400,()=>[
-    HTMLFormControlsCollection.log("Se escucha correctamente")
+    console.log("Se escucha correctamente")
 ])
 
 test()

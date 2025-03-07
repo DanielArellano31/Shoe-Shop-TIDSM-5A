@@ -6,8 +6,8 @@ const Shoe = new Schema({
         type: String,
         required: true
     },
-    size:{
-        type: Number,
+    category:{
+        type: String,
         required: true
     },
     price:{
