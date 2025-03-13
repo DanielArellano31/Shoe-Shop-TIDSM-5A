@@ -14,8 +14,9 @@ mongoose.connect(process.env.urlbase)
   });
 
 const app = express();
+app.use(express.json());
 app.use(cors());
-app.listen(400, () => {
+app.listen(4000, () => {
   console.log("se escucha el servidor");
 });
 
