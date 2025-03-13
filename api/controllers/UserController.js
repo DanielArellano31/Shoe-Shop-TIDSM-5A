@@ -1,11 +1,10 @@
-import { UserModel } from "../models/UserModel";
-import { Request, Response} from express;
-import jwt from jsonwebtoken;
+import { UserModel } from "../models/UserModel.js";
+import jwt from "jsonwebtoken";
 
-export const registerUser = async (req, res)=>{
+export const registerUser = async (req,res)=>{
   try {
       //Validamos que existan todos los datos
-      const name = req.body.name
+      const name = request.body.name
       const email = req.body.email
       const password = req.body.password
       const rol = req.body.rol
@@ -64,4 +63,8 @@ export const logIn = async(req, res)=>{
        res.status(500).json({msg:"Hubo un error al iniciar sesion"}) 
        return
     }
+}
+
+export const test = () =>{
+    console.log("Si funciona el controlador")
 }

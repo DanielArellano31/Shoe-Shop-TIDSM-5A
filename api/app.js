@@ -1,24 +1,24 @@
-import express from express;
-import cors from cors;
-import mongoose from mongoose;
-import dotenv from dotenv;
+import mongoose from "mongoose";
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import { logIn, registerUser, test } from "./controllers/UserController.js";
 
 dotenv.config();
-
 mongoose.connect(process.env.urlbase)
-
-.then(()=>{
-    console.log("Funciona correctamente")
-})
-
-.catch((error)=>{
-    console.log("Algo salio mal", error)
-})
+  .then(() =>{
+    console.log("funciona la base de datos");
+  })
+  .catch((error) => {
+    console.log("No funciona ya salio");
+  });
 
 const app = express();
 app.use(cors());
-app.listen(400,()=>[
-    console.log("Se escucha correctamente")
-])
+app.listen(400, () => {
+  console.log("se escucha el servidor");
+});
 
-test()
+app.post("/register", registerUser)
+app.post("/login", logIn)
+test();
