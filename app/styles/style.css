@@ -488,6 +488,28 @@ footer {
   font-size: 14px;
 }
 
+/* Estilos para el filtro de categorías */
+.filter-section {
+  padding: 20px 0;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.filter-dropdown {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  transition: border-color 0.3s;
+}
+
+.filter-dropdown:focus {
+  border-color: #e63946;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .category-grid,

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app/styles/cart.css">
+    <title>Carrito de Compras - Shoe-Shop</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Shoe-Shop</div>
+                <ul class="nav-links">
+                    <li><a href="dashboard.html">Inicio</a></li>
+                    <li class="cart-icon">
+                        <a href="cart.html">🛒</a>
+                        <span class="cart-count">0</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carrito de Compras -->
+    <section class="cart-section">
+        <div class="container">
+            <h2 class="section-title">Tu Carrito de Compras</h2>
+            <div class="cart-items">
+                <!-- Aquí se mostrarán los productos añadidos al carrito -->
+            </div>
+            <div class="cart-summary">
+                <h3>Resumen del Pedido</h3>
+                <p>Total: <span class="cart-total">$0.00</span></p>
+                <button class="btn">Proceder al Pago</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/app/js/cart.js"></script>
+</body>
+</html>

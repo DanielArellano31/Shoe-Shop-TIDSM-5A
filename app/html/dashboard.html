@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/app/styles/style.css" />
+    <title>Shoe-Shop - Tu Tienda de Calzado Online</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Shoe-Shop</div>
+                <ul class="nav-links">
+                    <li><a href="login.html">Cerrar Sesión</a></li>
+                    <li class="cart-icon">
+                        <a href="cart.html">🛒</a>
+                        <span class="cart-count">0</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Estilo y Confort para tus Pasos</h1>
+            <p>
+                Descubre nuestra nueva colección de temporada con diseños exclusivos y
+                materiales de primera calidad.
+            </p>
+            <a href="#" class="btn">Comprar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://i.pinimg.com/originals/11/b3/11/11b311765659da2369213a5c9eece5d9.jpg" alt="Zapatos Casuales" />
+                    </div>
+                    <div class="category-name">Zapatos Casuales</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://th.bing.com/th/id/R.98391c1b73e2c39f4f87cf0efbc02830?rik=iNucIGESOh9REQ&pid=ImgRaw&r=0" alt="Zapatos Deportivos" />
+                    </div>
+                    <div class="category-name">Deportivos</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://th.bing.com/th/id/OIP.kACPAy0nRICCXDXANHIQpgHaE8?rs=1&pid=ImgDetMain" alt="Zapatos Formales" />
+                    </div>
+                    <div class="category-name">Formales</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://th.bing.com/th/id/OIP.xpHcGK6sqXmXGQWXHA6lvgAAAA?rs=1&pid=ImgDetMain" alt="Botas" />
+                    </div>
+                    <div class="category-name">Botas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtro de Categorías -->
+    <section class="filter-section">
+        <div class="container">
+            <h2 class="section-title">Filtrar por Categoría</h2>
+            <select id="category-filter" class="filter-dropdown">
+                <option value="all">Todas</option>
+                <option value="Deportivos">Deportivos</option>
+                <option value="Casual">Casual</option>
+                <option value="Formal">Formal</option>
+                <option value="Botas">Botas</option>
+                <option value="Sandalias">Sandalias</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Los productos se generarán dinámicamente aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="copyright">
+        &copy; 2025 Shoe-Shop. Todos los derechos reservados.
+    </footer>
+
+    <script src="/app/js/dashboard.js"></script>
+</body>
+</html>
