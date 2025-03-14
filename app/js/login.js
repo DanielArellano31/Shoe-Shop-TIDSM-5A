@@ -1,31 +1,32 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('form');
-    const inputs = form.querySelectorAll('input');
+document.getElementById('login-btn').addEventListener('click', async (e) => {
+    e.preventDefault(); // Corregido: agregar paréntesis para llamar a la función
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
-    const formData = {};
+    if (!email || !password) {
+        alert('Por favor, complete todos los campos.');
+        return;
+    }
 
-    inputs.forEach(input => {
-        input.addEventListener('change', function (event) {
-            formData[event.target.name] = event.target.value;
-            console.log(formData);
-        });
-    });
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        fetch('/api/login', {
+    try {
+        const response = await fetch('http://127.0.0.1:4000/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(formData)
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Success:', data);
-        })
-        .catch((error) => {
-            console.error('Error:', error);
+            body: JSON.stringify({ email, password })
         });
-    });
+
+        const data = await response.json();
+        if (response.ok) {
+            console.log(data);
+            window.location.href = '../html/dashboard.html'; // Redirige al dashboard
+        } else {
+            alert('Error al iniciar sesión. Verifique sus credenciales.');
+            console.error(`Error: ${response.status} - ${data.error}`);
+        }
+    } catch (error) {
+        console.error('Error al conectar con el servidor:', error);
+        alert('Hubo un problema al iniciar sesión.');
+    }
 });
