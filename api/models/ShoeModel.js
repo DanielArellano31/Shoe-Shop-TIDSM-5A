@@ -17,6 +17,10 @@ const Shoe = new Schema({
     description:{
         type: String,
          required: true
+   },
+   image: {
+       type: String,
+       required: true
    }
 })
 export const ShoeModel = model("ShoeModel",Shoe)

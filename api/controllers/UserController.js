@@ -24,24 +24,21 @@ export const registerUser = async (req, res) => {
     }
 };
 
-export const logIn = async(req, res)=>{
+export const logIn = async (req, res) => {
     try {
-        const user = await UserModel.findOne({email: req.body.email, password: req.body.password})
-        
-        if (!user){
-            res.status(400).json({msg:"Este usuario no esta registrado"})
-            return
-        };
-        
-        res.status(200).json({msg:"sesion iniciada con exito", user})
-        return
-        
+        const user = await UserModel.findOne({ email: req.body.email, password: req.body.password });
+
+        if (!user) {
+            res.status(400).json({ msg: 'Este usuario no está registrado' });
+            return;
+        }
+
+        res.status(200).json({ msg: 'Sesión iniciada con éxito', user });
     } catch (error) {
-        console.log(error);
-        res.status(500).json({msg:"Hubo un error al iniciar sesion"}) 
-        return
+        console.error('Error en logIn:', error);
+        res.status(500).json({ msg: 'Hubo un error al iniciar sesión' });
     }
-}
+};
 
 export const test = () =>{
     console.log("Si funciona el controlador")
